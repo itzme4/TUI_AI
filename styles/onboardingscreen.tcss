@@ -1,0 +1,91 @@
+Onboarding {
+    align: center middle;
+    background: #050d1a;
+}
+
+#outer-box {
+    border: heavy #157fe9;
+    width: 100%;
+    height: 100%;
+    align: center middle;
+    background: #0a0e1a;
+}
+
+#greeting {
+    text-align: center;
+    color: #00ff48;
+    text-style: bold;
+    height: auto;
+}
+
+#sub-title {
+    text-align: center;
+
+}
+
+.divider {
+    width: 100%;
+    text-align: center;
+    text-style: bold;
+    color: #157fe9;
+}
+
+.form-box {
+    height: auto;
+    margin-bottom: 1;
+    align: left middle;
+}
+
+.left-label {
+    height: auto ;
+    width: 20;
+    color: #ccddee;
+}
+
+.right-input {
+    width: 1fr;
+    height: auto;
+    background:  #0a0e1a;
+}
+
+#continue-btn {
+    width: 20;
+    background: #3a3fd8;
+    color: white;
+    border: none;
+    height: 3;
+    align: center middle;
+    text-align: center;
+}
+#ai-name {
+    text-style: bold;
+}
+
+#clock-radio {
+    border: none;
+}
+#form {
+    border: round #3a3fd8;
+    height: auto;
+}
+
+#footer {
+    border: round #3a3a6a;
+    height: auto;
+    dock: bottom;
+    width: 100%;
+}
+
+Input {
+    border: round #3a3a6a;
+
+}
+
+Input:focus {
+    border: round #cc44cc;
+}
+
+#clock-radio {
+    layout: horizontal;
+    height: auto;
+}

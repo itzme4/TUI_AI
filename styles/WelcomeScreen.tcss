@@ -1,0 +1,93 @@
+WelcomeScreen{
+    align: center middle;
+    background: #050d1a;
+
+
+}
+
+#welcome-outer {
+    width: 100%;
+    height: 100%;
+    border: heavy #157fe9;
+    align: center middle;
+    padding: 1 2;
+    layout: vertical;
+    background: #0a0e1a;
+
+} 
+
+
+#welcome-title {
+    text-align:center;
+    color: #00ff48;
+    text-style: bold ;
+    width: 100%;
+}
+
+#divider {
+    text-align: center;
+    color: #128edb;
+    width: 100%;
+}
+
+#dev-by {
+    text-align: center;
+    color: #c0d0e0;
+    width: 100%;
+
+}
+
+#logo-box {
+    align: center middle;
+    border: double #1a4a8a;
+    background: #080f1e;
+    width: 50;
+    height: 13;
+    padding: 0 1;
+    margin: 0 55;
+    margin-top: 2;
+}
+
+#dots {
+    color: #00d4aa;
+    width: 100%;
+    text-style: bold;
+    border: round #1a4a8a
+
+}
+
+#ascii-logo {
+    color: #1a6aff;
+    text-align: center;
+    width: 100%;
+    padding-top: 1;
+}
+
+#desc-box {
+    border: dashed #1a4a8a;
+    background: #080f1e;
+    width: 50;
+    align: center middle;
+    margin-left: 55;
+    height: 5;
+    margin-top: 2;
+    
+}
+
+#desc-text {
+    text-align: center;
+    color: #00aaff;
+    width: 100%;
+}
+
+#footer-hint {
+    border: solid #166dde;
+    text-align: center;
+    color: #4a6a8a;
+    width: 100%;
+
+    dock: bottom;
+  
+}
+
+
