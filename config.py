@@ -4,4 +4,6 @@ DATABASE_DIR=Path(__file__).resolve().parent/"database"
 print(STYLES_DIR)
 WELCOME_TCSS=STYLES_DIR/"WelcomeScreen.tcss"
 ONBOARDING_TCSS=STYLES_DIR/"onboardingscreen.tcss"
-ONBOARDING_DB=DATABASE_DIR/"onboardingconfig.db"
+MAIN_TCSS=STYLES_DIR/"mainscreen.tcss"
+ONBOARDING_DB=DATABASE_DIR/"onboardingconfig.json"
+CONFIG_DB=DATABASE_DIR/"config.json"
