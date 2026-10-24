@@ -1,9 +1,9 @@
 {
-    "ai_name": "Jarvis",
-    "user_name": "Ironman",
-    "state": "AP",
-    "country": "India",
-    "city": "Guntur",
-    "time_format": "12",
+    "ai_name": "",
+    "user_name": "",
+    "state": "",
+    "country": "",
+    "city": "",
+    "time_format": "",
     "setup": true
 }

@@ -1,6 +1,6 @@
 {
-    "mode": "online",
-    "provider": "gemini",
-    "model": "gemini-3.5-flash-lite",
+    "mode": "",
+    "provider": "",
+    "model": "",
     "ollama_model": ""
 }
