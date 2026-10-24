@@ -1,0 +1,7 @@
+textual
+psutil
+pyfiglet
+python-dotenv
+requests
+groq
+google-genai
