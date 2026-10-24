@@ -72,7 +72,7 @@
 
 ```bash
 # 1. clone
-git clone <your-repo-url> TUI_AI
+git clone https://github.com/itzme4/TUI_AI.git
 cd TUI_AI
 
 # 2. virtual environment
