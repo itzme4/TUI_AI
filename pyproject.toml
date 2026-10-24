@@ -1,0 +1,2 @@
+[project.scripts]
+tui-ai = "tui_ai.__main__:main"

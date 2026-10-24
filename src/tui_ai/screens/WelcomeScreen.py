@@ -2,12 +2,15 @@ from textual.app import App,ComposeResult
 from textual.screen import Screen
 from textual.widgets import Static,Input,RadioButton,RadioSet,Button,Label
 from textual.containers import Container,Vertical,Horizontal,Center
-from config import WELCOME_TCSS
-import json
+from tui_ai.core.config import WELCOME_TCSS, ONBOARDING_DB
+from tui_ai.screens.OnboardingScreen import OnboardingScreen
+from tui_ai.screens.MainScreen import Main_screen
+from tui_ai.util.file_handing import load_json
 import pyfiglet
 LOGO=pyfiglet.figlet_format("TUI   AI",font="big")
-
+data=load_json(ONBOARDING_DB)
 class WelcomeScreen(Screen):
+    
     CSS_PATH= WELCOME_TCSS
     BINDINGS=[
         (
@@ -43,4 +46,9 @@ class WelcomeScreen(Screen):
                 id="footer-hint",
                 markup=True,
             )
-  
+    def on_key(self,event):
+        if event.key == "enter":
+            if not data["setup"]:
+                self.app.push_screen(OnboardingScreen())
+            else:
+                self.app.push_screen(Main_screen())

@@ -1,0 +1,103 @@
+Main_screen {
+    background: #050d1a;
+    align: center middle;
+}
+#outer-box {
+    width: 100%;
+    height: 100%;
+    align: center middle;
+    border: heavy #157fe9;
+}
+StatusBar {
+    width: 100%;
+    height: auto;
+    background: #050d1a;
+    color: #c9d1d9;
+    padding: 0 1;
+    border-bottom: round #157fe9;
+    text-style: bold;
+    dock: top;
+}
+#main-layout {
+    width: 100%;
+    height: 1fr;
+}
+#left-box {
+    width: 25;
+    height: 100%;
+    background: #050d1a;
+    border: round #4d0de0;
+    padding: 1;
+}
+#right-box {
+    width: 1fr;
+    height: 100%;
+    background: #050d1a;
+    border: round rgb(144, 0, 255)
+}
+#input-box {
+    width: 100%;
+    height: auto;
+    dock: bottom;
+
+}
+#header {
+    border-bottom: round  rgb(144, 0, 255);
+    dock: top;
+    text-align: center;
+}
+.center-text {
+    text-align: center;
+}
+#terminal-input {
+    width: 30%;
+    background: #050d1a;
+}
+#chat-input {
+    width: 1fr;
+}
+Input {
+    border: round;
+    background: #050d1a;
+}
+Input:focus {
+    background: #050d1a;
+    
+}
+
+QuickAccess {
+    background: #050d1a;
+
+}
+Tree {
+    background: #050d1a;
+}
+Tree .tree--label {
+    background: transparent;
+}
+Tree .tree--highlight-line {
+    background: transparent;
+}
+Tree .tree--cursor {
+    background: transparent;
+}
+#chat {
+    background: #050d1a;
+}
+.output-msg {
+    border: round #701ec2cc;
+    width: 75%;
+    height: auto;
+}
+.input-msg {
+    border: round #18ca27c8;
+    text-align: left;
+    width: 100%;
+    margin-left: 35;
+    height: auto;
+
+}
+#server-logo {
+    text-align: center;
+    border-bottom: dashed #8b2837;
+}

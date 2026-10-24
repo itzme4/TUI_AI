@@ -1,6 +1,6 @@
 from textual.app import App,ComposeResult
 from textual.containers import Container,Horizontal,Vertical
-from textual.widgets import Label, Static, Input,Header,Button,RadioButton,RadioSet,Footer,ContentSwitcher
+from textual.widgets import Label, Static, Input,Header,Button,RadioButton,RadioSet,Footer,ContentSwitcher,Link
 from textual.screen import Screen
 from tui_ai.core.config import ONBOARDING_TCSS, ONBOARDING_DB, CONFIG_DB
 from tui_ai.screens.MainScreen import Main_screen
@@ -51,8 +51,14 @@ class OnboardingScreen(Screen):
                         with RadioSet(id="provider",classes="right-input"):
                             yield RadioButton("Gemini",id="gemini",classes="right-input")
                             yield RadioButton("Groq",id="groq",classes="right-input")
-                    yield Label("Model name")
-                    yield Input(placeholder="Enter model name Ex: (gemini-3.8,openai/gpt-oss-120b)"
+                    with Horizontal():
+                        yield Label("For Gemini model names visit:")
+                        yield Link("https://ai.google.dev/gemini-api/docs/models",id="model-link")
+                    with Horizontal():
+                        yield Label("For Groq model names visit:")
+                        yield Link("https://console.groq.com/docs/models",id="model-link")
+                    yield Label("Model Name")
+                    yield Input(placeholder="Enter model name Ex: (gemini-3.8-flash,openai/gpt-oss-120b)"
                                 ,id="online-model"
                                 ,classes="right-input")
                     yield Label("API KEY")
@@ -89,11 +95,10 @@ class OnboardingScreen(Screen):
             if self.mode == "both":
                 switcher.current="step4"
             else:
+                self.notify("Setup completed",severity="information")
                 self._save_and_exit()
-                self.app.push_screen(Main_screen())
         elif current == "step4":
             self._save_and_exit()
-            self.app.push_screen(Main_screen())
     def _save_and_exit(self):
         def radio_id(selector):
             btn=self.query_one(selector,RadioSet).pressed_button
@@ -114,6 +119,7 @@ class OnboardingScreen(Screen):
         data["setup"]=True
         config_data["mode"]=self.mode
         config_data["provider"]=radio_id("#provider")
+        config_data["model"]=self.query_one("#online-model",Input).value
         provider=config_data["provider"]
         api_key=self.query_one("#api-key",Input).value
         save_api_key(provider,api_key)
