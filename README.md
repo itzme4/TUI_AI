@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assests/banner.svg" alt="TUI AI - Textual User Interface AI" width="100%"/>
+<img src="assets/banner.svg" alt="TUI AI - Textual User Interface AI" width="100%"/>
 
 **An AI assistant that lives inside your terminal.** Chat with cloud models today, local models soon.
 
@@ -12,20 +12,20 @@
 
 </div>
 
-<img src="assests/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## Table of contents
 
 [Current phase](#-current-phase) · [Features](#-features) · [Screenshots](#-screenshots) · [Live demo](#-live-demo) · [Quick start](#-quick-start) · [Configuration](#-configuration) · [How it works](#-how-it-works) · [Project structure](#-project-structure) · [Roadmap](#-roadmap--future-updates) · [Known limitations](#-known-limitations)
 
-<img src="assests/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 📍 Current phase
 
 > **Phase 1: Foundation (Alpha, v0.1).**
 > The app starts, onboards a new user, validates input, and talks to an online AI provider. Quick-access tools, offline mode and chat memory are the next milestones.
 
-<img src="assests/progress.svg" width="100%" alt="Estimated progress per area"/>
+<img src="assets/progress.svg" width="100%" alt="Estimated progress per area"/>
 
 <sub>Percentages are rough estimates of how complete each area is, not measured metrics.</sub>
 
@@ -50,18 +50,18 @@
 
 <table>
 <tr>
-<td width="50%"><b>Welcome</b><br/><img src="assests/welcome_screen.png" alt="Welcome screen"/></td>
-<td width="50%"><b>Onboarding</b><br/><img src="assests/onboarding_screen.png" alt="Onboarding screen"/></td>
+<td width="50%"><b>Welcome</b><br/><img src="assets/welcome_screen.png" alt="Welcome screen"/></td>
+<td width="50%"><b>Onboarding</b><br/><img src="assets/Onboarding_screen.png" alt="Onboarding screen"/></td>
 </tr>
 <tr>
-<td colspan="2"><b>Main screen (real AI reply)</b><br/><img src="assests/main_screen.png" alt="Main screen with chat"/></td>
+<td colspan="2"><b>Main screen (real AI reply)</b><br/><img src="assets/Main_Screen.png" alt="Main screen with chat"/></td>
 </tr>
 </table>
 
 ## 🎬 Live demo
 
 <div align="center">
-<img src="assests/chat-demo.svg" alt="Animated demo: typing a question and getting an AI answer" width="100%"/>
+<img src="assets/chat-demo.svg" alt="Animated demo: typing a question and getting an AI answer" width="100%"/>
 </div>
 
 <sub>This animation is a simplified illustration of the chat flow, not a recording of a real session.</sub>
@@ -209,7 +209,7 @@ Developed by **ITZME 4**. Built with [Textual](https://textual.textualize.io/), 
 
 <div align="center">
 
-<img src="assests/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 <sub>Made with ❤ in the terminal</sub>
 
